@@ -1,1 +1,69 @@
-/* styles go here */
+html,
+body,
+form,
+legend,
+option {
+  display: block;
+  font-family: serif;
+  font-weight: 400;
+}
+
+body {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+fieldset {
+  display: block;
+  border-width: 2px;
+  border-style: groove;
+  border-color: rgb(192, 192, 192);
+}
+
+label {
+  cursor: default;
+}
+
+select {
+  display: inline-block;
+  text-align: start;
+  box-sizing: border-box;
+  align-items: center;
+  border-width: 1px;
+  border-style: solid;
+}
+
+textarea {
+  resize: auto;
+  cursor: text;
+}
+
+#submit {
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-size: 12px;
+  color: rgb(36, 35, 35);
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  box-sizing: border-box;
+  padding: 1px 6px;
+}
+
+#recommend {
+  border-radius: 5px;
+}
+
+#year {
+  margin-bottom: 10px;
+}
+
+.inputs {
+  margin-bottom: 20px;
+}
+
+.formField:not(:last-child) {
+  display: block;
+  margin-bottom: 10px;
+}
