@@ -13,12 +13,9 @@
     method="post"
     onsubmit="onSubmit()"
     >
-      <fieldset class="inputs">
-        <legend>Personal information</legend>
-        <label
-        class="formField"
-        for="surname"
-        >
+      <fieldset class="fieldset inputs">
+        <legend class="legend">Personal information</legend>
+        <label class="formField" for="surname">
         Surname:
           <input
         type="text"
@@ -36,25 +33,18 @@
         autocomplete="off"
           >
         </label>
-        <label
-        class="formField"
-        for="year"
-        >
-        </label>
+        <label class="formField" for="year">
         How old are You?
-        <input
+          <input
         type="number"
         name="year"
         id="year"
-        min="12"
+        min="1"
         max="100"
         value="12"
-        >
+          >
         </label>
-        <label
-        class="formField"
-        for="birthData"
-        >
+        <label class="formField" for="birthData">
         Full date of birth:
           <input
         type="date"
@@ -62,10 +52,7 @@
         id="birthData"
           >
         </label>
-        <label
-        class="formField"
-        for="terms"
-        >
+        <label class="formField" for="terms">
         I accept the term of the agreement
           <input
         type="checkbox"
@@ -75,12 +62,9 @@
           >
         </label>
       </fieldset>
-      <fieldset class="inputs">
-        <legend>Registration</legend>
-        <label
-        class="formField"
-        for="email"
-        >
+      <fieldset class="fieldset inputs">
+        <legend class="legend">Registration</legend>
+        <label class="formField" for="email">
         E-mail:
           <input
         type="email"
@@ -89,10 +73,8 @@
         placeholder="email@example.com"
           >
         </label>
-        <label
-        class="formField"
-        for="password"
-        > Password:
+        <label class="formField" for="password">
+           Password:
           <input
         type="password"
         name="password"
@@ -100,23 +82,25 @@
           >
         </label>
       </fieldset>
-      <fieldset class="inputs">
-        <legend>An interesting fact about you!</legend>
+      <fieldset class="fieldset inputs">
+        <legend class="legend">An interesting fact about you!</legend>
         <div class="formField">
         Do you love cats?
-          <label for="love">
+          <label for="love-yes">
             <input
             type="radio"
             name="love"
-            id="love"
+            id="love-yes"
+            value="love-yes"
             >
             Yes
           </label>
-          <label for="hate">
+          <label for="love-no">
             <input
             type="radio"
-            name="hate"
-            id="hate"
+            name="love"
+            id="love-no"
+            value="love-no"
             >
             No
           </label>
@@ -145,10 +129,10 @@
           id="cars"
           multiple
           >
-            <option value="BWM">BMW</option>
-            <option value="Audi">Audi</option>
-            <option value="Ford">Ford</option>
-            <option disabled selected></option>
+            <option value="BWM" class="option">BMW</option>
+            <option value="Audi" class="option">Audi</option>
+            <option value="Ford" class="option">Ford</option>
+            <option disabled class="option"></option>
           </select>
         </label>
         <label class="formField" for="rate">
@@ -163,13 +147,14 @@
           >
         </label>
       </fieldset>
-      <fieldset class="inputs">
-        <legend>Additional info:</legend>
+      <fieldset class="fieldset inputs">
+        <legend class="legend">Additional info:</legend>
         <label class="formField" for="comments">
           Comments:
           <textarea
           name="comments"
           id="comments"
+          class="textarea"
           cols="20"
           rows="2"
           >
@@ -179,7 +164,7 @@
           Would you recommend us?
           <select
           name="recommend"
-          id="recommend"
+          class="select"
           size="1"
           >
             <option value="yes">yes</option>
@@ -187,7 +172,13 @@
           </select>
         </label>
       </fieldset>
-      <button type="submit" id="submit">Submit</button>
+      <button
+      type="submit"
+      id="submit"
+      class="submit-button"
+      >
+      Submit
+      </button>
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>

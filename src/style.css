@@ -1,35 +1,28 @@
-html,
-body,
-form,
-legend,
-option {
+html {
   display: block;
-  font-family: serif;
-  font-weight: 400;
 }
 
 body {
   margin: 8px;
-}
-
-legend {
   display: block;
-  padding-inline-start: 2px;
-  padding-inline-end: 2px;
 }
 
-fieldset {
+.legend {
+  display: block;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.fieldset {
   display: block;
   border-width: 2px;
   border-style: groove;
   border-color: rgb(192, 192, 192);
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
-label {
-  cursor: default;
-}
-
-select {
+.select {
   display: inline-block;
   text-align: start;
   box-sizing: border-box;
@@ -38,12 +31,12 @@ select {
   border-style: solid;
 }
 
-textarea {
+.textarea {
   resize: auto;
   cursor: text;
 }
 
-button {
+.submit-button {
   display: inline-block;
   text-align: center;
   align-items: flex-start;
@@ -54,15 +47,11 @@ button {
   border-style: outset;
 }
 
-option {
+.option {
   font-weight: normal;
   display: block;
   white-space: nowrap;
   min-height: 1.2em;
-}
-
-#year {
-  margin-bottom: 10px;
 }
 
 .inputs {
