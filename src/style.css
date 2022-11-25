@@ -1,38 +1,6 @@
 
-.fieldset {
-  border-color: rgb(192, 192, 192);
-}
-
 .select {
   display: inline-block;
-  text-align: start;
-  box-sizing: border-box;
-  align-items: center;
-  border-width: 1px;
-  border-style: solid;
-}
-
-.textarea {
-  resize: auto;
-  cursor: text;
-}
-
-.submit-button {
-  display: inline-block;
-  text-align: center;
-  align-items: flex-start;
-  cursor: default;
-  box-sizing: border-box;
-  padding: 1px 6px;
-  border-width: 2px;
-  border-style: outset;
-}
-
-.option {
-  font-weight: normal;
-  display: block;
-  white-space: nowrap;
-  min-height: 1.2em;
 }
 
 .inputs {
